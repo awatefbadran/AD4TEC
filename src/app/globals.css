@@ -1,26 +1,71 @@
 @import "tailwindcss";
+@plugin "daisyui";
+/* =========================
+   AD4TEC BRAND TOKENS
+   ========================= */
+@theme {
+  /* Backgrounds */
+  --color-bg-primary: #232536;
+  --color-bg-light: #f7eee3;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Text */
+  --color-text-primary: #EDE6DE;
+
+  /* Brand Orange */
+  --color-brand-primary: #F28C28;
+  --color-brand-dark: #D8741C;
+  --color-brand-light: #F6A24D;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* =========================
+   BASE STYLES
+   ========================= */
+@layer base {
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    @apply antialiased;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* =========================
+   COMPONENTS
+   ========================= */
+@layer components {
+  .btn-primary {
+    background-color: var(--color-brand-primary);
+    color: #000;
+    @apply px-6 py-3 rounded-xl font-semibold transition-all duration-200;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-brand-dark);
+  }
+
+  .card {
+    background-color: #0b0b0b;
+    @apply rounded-2xl p-6 border border-white/10;
+  }
+}
+
+/* =========================
+   UTILITIES
+   ========================= */
+@layer utilities {
+  .text-brand {
+    color: var(--color-brand-primary);
+  }
+
+  .bg-brand {
+    background-color: var(--color-brand-primary);
+  }
+
+  .bg-brand-gradient {
+    background-image: linear-gradient(
+      135deg,
+      var(--color-brand-light),
+      var(--color-brand-primary),
+      var(--color-brand-dark)
+    );
+  }
 }
