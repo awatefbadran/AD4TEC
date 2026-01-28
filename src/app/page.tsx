@@ -1,7 +1,9 @@
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
+import About from "@/components/home/About";
+import Experience from "@/components/home/Experience";
+import Hero from "@/components/home/Hero";
+import Services from "@/components/home/Services";
+import Process from "@/components/home/Process";
+import Why from "@/components/home/Why";
 
 
 export default function Home() {
@@ -11,6 +13,8 @@ export default function Home() {
    <About/>
    <Experience/>
    <Services/>
+   <Process/>
+   <Why/>
    </>
   );
 }

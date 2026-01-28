@@ -133,7 +133,7 @@ export default function Footer() {
         >
           <div className="flex items-center gap-4">
             <Logo
-              responsive={false}
+              responsive={true}
               iconWidth={500}
               iconHeight={500}
               iconClassName="w-4 h-4"
