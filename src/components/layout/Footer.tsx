@@ -2,12 +2,8 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import {
-  MdArrowForward,
-  MdEmail,
-  MdPhone,
-  MdLocationOn,
-} from "react-icons/md";
+import Logo from "./Logo";
+import { MdArrowForward, MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -39,16 +35,16 @@ export default function Footer() {
 
               <div className="flex items-center gap-2 text-gray-600">
                 <MdLocationOn className="text-brand-primary  text-xl" />
-                <p className="text-xs max-w-xs" dir="ltr">{t("address")}</p>
+                <p className="text-xs max-w-xs" dir="ltr">
+                  {t("address")}
+                </p>
               </div>
             </div>
           </div>
 
           {/* Company */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">
-              {t("company")}
-            </p>
+            <p className="font-semibold text-brand-primary">{t("company")}</p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="/" className="footer-link">
                 {t("home")}
@@ -70,9 +66,7 @@ export default function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">
-              {t("services")}
-            </p>
+            <p className="font-semibold text-brand-primary">{t("services")}</p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="#" className="footer-link">
                 {t("technicalSupport")}
@@ -94,9 +88,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">
-              {t("resources")}
-            </p>
+            <p className="font-semibold text-brand-primary">{t("resources")}</p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="/about" className="footer-link">
                 {t("about")}
@@ -122,7 +114,9 @@ export default function Footer() {
                 {t("contactUs")}
                 <MdArrowForward
                   className={`transition-transform  ${
-                    isRTL ? "rotate-180 group-hover:-translate-x-1 " : "group-hover:translate-x-1"
+                    isRTL
+                      ? "rotate-180 group-hover:-translate-x-1 "
+                      : "group-hover:translate-x-1"
                   }`}
                 />
               </Link>
@@ -137,10 +131,24 @@ export default function Footer() {
           className="container mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300"
           dir={"ltr"}
         >
-          <p>{t("rights")}</p>
+          <div className="flex items-center gap-4">
+            <Logo
+              responsive={false}
+              iconWidth={500}
+              iconHeight={500}
+              iconClassName="w-4 h-4"
+              logoWidth={500}
+              logoHeight={500}
+              logoClassName="h-4 md:w-24 ml-2 mx-1"
+            />
+            <p>{t("rights")}</p>
+          </div>
 
           <div className="flex items-center gap-6 mt-3 md:mt-0 text-xl">
-            <Link href="https://www.facebook.com/profile.php?id=61585550430439" aria-label="Facebook">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61585550430439"
+              aria-label="Facebook"
+            >
               <FaFacebook className="hover:text-brand-primary transition" />
             </Link>
             <Link href="#" aria-label="Twitter">
