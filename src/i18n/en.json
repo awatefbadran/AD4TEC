@@ -22,5 +22,49 @@
   "news": "News",
   "testimonials": "Testimonials",
   "privacy": "Privacy Policy",
-  "terms": "Terms of Use"
+  "terms": "Terms of Use",
+
+  "process.upperTitle": "OUR PROCESS",
+  "process.title": "How We Execute Projects at AD4TEC",
+  "process.description": "At AD4TEC, we follow a clear and structured workflow for every project, ensuring high quality, safety, and on-time delivery at every stage.",
+
+  "process.step1.title": "Site Study & Requirements",
+  "process.step1.desc": "We start by understanding the client’s needs and conducting an on-site study to analyze technical requirements and security considerations accurately.",
+
+  "process.step2.title": "Design & Planning",
+  "process.step2.desc": "Our engineering team prepares detailed technical designs and execution plans, selecting the most suitable systems and solutions for each project.",
+
+  "process.step3.title": "Manufacturing & Preparation",
+  "process.step3.desc": "All gates and metal structures are manufactured at AD4TEC factory using certified materials and modern technologies to ensure durability and quality.",
+
+  "process.step4.title": "Testing & Inspection",
+  "process.step4.desc": "Every system and gate undergoes thorough testing to ensure operational efficiency, safety, and reliability before installation.",
+
+  "process.step5.title": "Installation & Commissioning",
+  "process.step5.desc": "Our specialized technical team installs the systems on-site, fully operates them, and hands over the project after final verification.",
+
+  "process.step6.title": "Maintenance & Technical Support",
+  "process.step6.desc": "We provide periodic maintenance programs and continuous technical support to ensure long-term performance and reliable after-sales service.",
+
+  "why.upperTitle": "WHY CHOOSE AD4TEC",
+  "why.title": "Why Choose AD4TEC?",
+  "why.description": "We don’t just deliver products, we provide integrated solutions built on quality, reliability, and full commitment to our clients.",
+
+  "why.item1.title": "High Manufacturing Quality",
+  "why.item1.desc": "We are committed to delivering high-quality products by using advanced manufacturing techniques and certified materials to ensure durability, safety, and long service life.",
+
+  "why.item2.title": "Official Certifications & Trusted Approvals",
+  "why.item2.desc": "Our products are certified by the Ministry of Trade and Industry, comply with Consumer Protection regulations, and are approved by leading consulting offices.",
+
+  "why.item3.title": "Real Warranty & After-Sales Service",
+  "why.item3.desc": "We provide a real warranty on all our products and systems, along with continuous technical support and reliable after-sales service.",
+
+  "why.item4.title": "On-Time Project Delivery",
+  "why.item4.desc": "We are fully committed to delivering projects on schedule without compromising manufacturing quality or execution accuracy.",
+
+  "why.item5.title": "Proven Experience & Strong Portfolio",
+  "why.item5.desc": "We have extensive hands-on experience and a strong portfolio of successful projects with major companies and factories across Egypt.",
+
+  "why.cta.title": "Looking for a reliable partner for your project?",
+  "why.cta.button": "Contact Us Now"
 }
