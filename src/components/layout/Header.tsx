@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import { MdLanguage } from "react-icons/md";
+import Logo from "./Logo";
 interface NavItem {
   id: string;
   labelKey: "home" | "services" | "about" | "store" | "blog" | "contact";
@@ -31,31 +32,10 @@ export default function Header() {
         {/* Top Bar */}
         <div className="flex items-center justify-between " dir="ltr">
           {/* Logo */}
-          <Link href={"/"}>
-            <div className="flex items-center">
-              {/* Icon – always visible */}
-
-              <Image
-                src="/ad4tec-icon.png"
-                alt="AD4TEC Icon"
-                width={500}
-                height={500}
-                className="w-6 h-6 md:w-8 md:h-8"
-              />
-
-              {/* Full logo – md and up only */}
-              <Image
-                src="/ad4tec-logo.png"
-                alt="AD4TEC"
-                width={500}
-                height={500}
-                className="hidden md:block h-8 md:w-32 ml-2 rtl:mr-2 rtl:ml-2"
-              />
-            </div>
-          </Link>
+          <Logo />
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6 ">
+          <nav className="hidden lg:flex items-center space-x-6 " dir={isRTL?"rtl":"ltr"}>
             {navItems.map((item) => (
               <Link
                 href={item.href}
