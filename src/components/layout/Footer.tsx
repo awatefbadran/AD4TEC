@@ -10,7 +10,7 @@ export default function Footer() {
   const { t, isRTL } = useLanguage();
 
   return (
-    <footer className="bg-bg-light text-bg-primary">
+    <footer className="bg-white text-bg-primary">
       {/* Main Footer */}
       <div className="container mx-auto px-4 sm:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
@@ -126,9 +126,9 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-brand-dark">
+      <div className="bg-bg-light">
         <div
-          className="container mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300"
+          className="container mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-bg-primary/80"
           dir={"ltr"}
         >
           <div className="flex items-center gap-4">
@@ -144,7 +144,7 @@ export default function Footer() {
             <p>{t("rights")}</p>
           </div>
 
-          <div className="flex items-center gap-6 mt-3 md:mt-0 text-xl">
+          <div className="flex items-center gap-6 mt-3 md:mt-0 text-xl text-bg-primary/80">
             <Link
               href="https://www.facebook.com/profile.php?id=61585550430439"
               aria-label="Facebook"
