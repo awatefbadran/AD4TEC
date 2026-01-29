@@ -46,25 +46,21 @@
   "process.step6.title": "Maintenance & Technical Support",
   "process.step6.desc": "We provide periodic maintenance programs and continuous technical support to ensure long-term performance and reliable after-sales service.",
 
-  "why.upperTitle": "WHY CHOOSE AD4TEC",
-  "why.title": "Why Choose AD4TEC?",
-  "why.description": "We don’t just deliver products, we provide integrated solutions built on quality, reliability, and full commitment to our clients.",
+  "trust.upperTitle": "WHY CHOOSE US",
+  "trust.title": "Companies trust AD4TEC to deliver reliable solutions",
+  "trust.description": "We provide high-quality manufacturing, certified systems, and reliable after-sales support to ensure long-term success for every project.",
 
-  "why.item1.title": "High Manufacturing Quality",
-  "why.item1.desc": "We are committed to delivering high-quality products by using advanced manufacturing techniques and certified materials to ensure durability, safety, and long service life.",
+  "trust.point1": "Certified by the Ministry of Trade & Industry",
+  "trust.point2": "Real warranty and after-sales service",
+  "trust.point3": "Proven experience across Egypt",
 
-  "why.item2.title": "Official Certifications & Trusted Approvals",
-  "why.item2.desc": "Our products are certified by the Ministry of Trade and Industry, comply with Consumer Protection regulations, and are approved by leading consulting offices.",
+  "trust.quote": "At AD4TEC, we are committed to delivering high-quality electronic gates, access control systems, and parking solutions with full compliance, precision, and on-time delivery.",
 
-  "why.item3.title": "Real Warranty & After-Sales Service",
-  "why.item3.desc": "We provide a real warranty on all our products and systems, along with continuous technical support and reliable after-sales service.",
+  "trust.author": "AD4TEC Management",
+  "trust.position": "Electronic Gates & Parking Systems Factory",
 
-  "why.item4.title": "On-Time Project Delivery",
-  "why.item4.desc": "We are fully committed to delivering projects on schedule without compromising manufacturing quality or execution accuracy.",
-
-  "why.item5.title": "Proven Experience & Strong Portfolio",
-  "why.item5.desc": "We have extensive hands-on experience and a strong portfolio of successful projects with major companies and factories across Egypt.",
-
-  "why.cta.title": "Looking for a reliable partner for your project?",
-  "why.cta.button": "Contact Us Now"
+  "cta.upperTitle": "STAY CONNECTED",
+  "cta.title": "Get the latest updates and offers from AD4TEC",
+  "cta.placeholder": "Enter your email or phone",
+  "cta.button": "Contact Us"
 }

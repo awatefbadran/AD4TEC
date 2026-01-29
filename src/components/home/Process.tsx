@@ -57,10 +57,12 @@ export default function Process() {
       <div className="container mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="mb-16 w-full text-left rtl:text-right">
-          <div className="inline-block px-4 py-1.5 mb-4 bg-bg-light rounded-full">
-            <span className="text-sm font-semibold text-bg-primary uppercase tracking-wide">
-              {t("process.upperTitle")}
+          <div className="inline-flex items-center justify-center mb-4">
+            <div className="h-px w-8 bg-[#F28C28] mr-3 rtl:ml-3 rtl:mr-0"></div>
+            <span className="text-sm font-semibold uppercase tracking-wider text-[#F28C28]">
+              {t('process.upperTitle')}
             </span>
+            <div className="h-px w-8 bg-[#F28C28] ml-3 rtl:mr-3 rtl:ml-0"></div>
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-bg-primary">
@@ -77,28 +79,16 @@ export default function Process() {
           {processSteps.map((step) => (
             <div
               key={step.number}
-              className="
-                relative border border-bg-primary/30
-                px-6 py-6
-                text-bg-primary
-                text-left rtl:text-right
-                rounded-lg
-                group hover:shadow-lg transition-shadow duration-300 cursor-pointer
-              "
+              className="relative border border-bg-primary/30 px-6 py-6 text-bg-primary text-left rtl:text-right rounded-lg group hover:shadow-lg transition-shadow duration-300 cursor-pointer flex flex-col justify-between gap-2"
             >
               {/* Step Number */}
-              <div
-                className="
-                  absolute top-3 right-3
-                  rtl:left-3 rtl:right-auto
-                  text-bg-primary/30 font-semibold text-3xl
-                  
-                "
-              >
+              <div className="absolute top-3 right-3 rtl:left-3 rtl:right-auto text-bg-primary/30 font-semibold text-4xl">
                 {step.number}
               </div>
               <div className="flex justify-center items-start gap-4 pt-6">
-                <div className="bg-bg-light text-2xl p-2 rounded-full group-hover:text-brand-dark transition-colors duration-300">{step.icon}</div>
+                <div className="bg-bg-light text-2xl p-2 rounded-full group-hover:text-white group-hover:bg-brand-dark transition-colors duration-300">
+                  {step.icon}
+                </div>
                 <div className="pt- flex flex-col gap-2 items-start w-full">
                   <h3 className="font-semibold text-xl ">{step.title}</h3>
 
@@ -107,6 +97,7 @@ export default function Process() {
                   </p>
                 </div>
               </div>
+                <div className="  h-1 w-0 group-hover:w-full bg-linear-to-r from-brand-primary to-brand-light transition-all duration-300 rounded-full"></div>
             </div>
           ))}
         </div>

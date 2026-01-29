@@ -4,6 +4,7 @@ import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
 import Process from "@/components/home/Process";
 import Why from "@/components/home/Why";
+import CTASection from "@/components/home/CTASection";
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
    <Services/>
    <Process/>
    <Why/>
+   <CTASection/>
    </>
   );
 }
