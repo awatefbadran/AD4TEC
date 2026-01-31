@@ -1,33 +1,39 @@
-export default function About(){
-    return(
-        <>
-          <section className="w-full py-20 bg-[#f9fafb] ">
-      <div className="container mx-auto px-6">
+"use client";
 
+import { useLanguage } from "@/context/LanguageContext";
+import Logo from "../layout/Logo";
+export default function About() {
+  const { t, isRTL } = useLanguage();
+
+  return (
+    <section className="w-full py-20 bg-[#f9fafb]">
+      <div className="container mx-auto px-6">
         {/* Top Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-14">
           {/* Left */}
           <div>
-            <p className="text-sm font-semibold text-gray-500 uppercase mb-3 ">
-              About Us
-            </p>
+            <div className="inline-flex items-center mb-4 gap-3">
+              <div className="h-px w-8 bg-brand-primary" />
+              <span className="text-sm font-semibold uppercase tracking-wider text-brand-primary">
+                {t("about.label")}
+              </span>
+              <div className="h-px w-8 bg-brand-primary" />
+            </div>
+
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
-              AD<span className="text-amber-600">4</span>TEC leads the future of <br /> electronic gates solutions.
+              {t("about.title.line1")} <Logo istext={true} /> <br />
+              {t("about.title.line2")}
             </h2>
           </div>
 
           {/* Right */}
           <div>
             <h3 className="text-xl font-semibold text-amber-600 mb-4">
-              Smart Technology. Strong Engineering.
+              {t("about.subtitle")}
             </h3>
+
             <p className="text-gray-700 leading-relaxed">
-              AD4TEC is a specialized factory providing integrated solutions for
-              automatic vehicle & pedestrian gates, access control systems,
-              parking management systems, and metal fabrication.  
-              We combine advanced technology, certified materials, and
-              professional execution to deliver secure and reliable systems
-              across Egypt.
+              {t("about.description")}
             </p>
           </div>
         </div>
@@ -55,32 +61,36 @@ export default function About(){
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
           <div>
             <h4 className="text-3xl font-bold text-gray-900">10+</h4>
-            <p className="text-gray-500 text-sm">Years Experience</p>
+            <p className="text-gray-500 text-sm">
+              {t("about.stats.yearsExperience")}
+            </p>
           </div>
 
           <div>
             <h4 className="text-3xl font-bold text-gray-900">500+</h4>
-            <p className="text-gray-500 text-sm">Projects Delivered</p>
+            <p className="text-gray-500 text-sm">
+              {t("about.stats.projectsDelivered")}
+            </p>
           </div>
 
           <div>
             <h4 className="text-3xl font-bold text-gray-900">100%</h4>
-            <p className="text-gray-500 text-sm">Certified Materials</p>
+            <p className="text-gray-500 text-sm">
+              {t("about.stats.certifiedMaterials")}
+            </p>
           </div>
 
-          <div className="md:text-right">
+          <div className={isRTL ? "md:text-left" : "md:text-right"}>
             <a
               href="/about"
               className="inline-flex items-center gap-2 text-amber-600 font-medium hover:underline"
             >
-              Read about us
-              <span>→</span>
+              {t("about.readMore")}
+              <span className={isRTL ? "rotate-180" : ""}>→</span>
             </a>
           </div>
         </div>
-
       </div>
     </section>
-        </>
-    )
+  );
 }
