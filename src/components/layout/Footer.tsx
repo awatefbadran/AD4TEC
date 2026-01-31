@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import Logo from "./Logo";
 import {
   MdArrowForward,
   MdEmail,
@@ -14,7 +15,7 @@ export default function Footer() {
   const { t, isRTL } = useLanguage();
 
   return (
-    <footer className="bg-bg-light text-bg-primary">
+    <footer className="bg-white text-bg-primary">
       {/* Main Footer */}
       <div className="container mx-auto px-4 sm:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
@@ -28,27 +29,27 @@ export default function Footer() {
               <p className="font-semibold">{t("letsTalk")}</p>
 
               <div className="flex items-center gap-2 text-gray-600">
-                <MdPhone className="text-brand-primary " />
-                <p dir="ltr">+20 10 40190064</p>
+                <MdPhone className="text-brand-primary" />
+                <p dir="ltr">01027249494 \\ 01000045030</p>
               </div>
 
               <div className="flex items-center gap-2 text-gray-600">
                 <MdEmail className="text-brand-primary text-xl" />
-                <p>hi@ad4tec.com</p>
+                <p>Info@ad4tec.com</p>
               </div>
 
               <div className="flex items-center gap-2 text-gray-600">
-                <MdLocationOn className="text-brand-primary  text-xl" />
-                <p className="text-xs max-w-xs" dir="ltr">{t("address")}</p>
+                <MdLocationOn className="text-brand-primary text-xl" />
+                <p className="text-xs max-w-xs" dir="ltr">
+                  {t("address")}
+                </p>
               </div>
             </div>
           </div>
 
           {/* Company */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">
-              {t("company")}
-            </p>
+            <p className="font-semibold text-brand-primary">{t("company")}</p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="/" className="footer-link">
                 {t("home")}
@@ -70,9 +71,7 @@ export default function Footer() {
 
           {/* Services */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">
-              {t("services")}
-            </p>
+            <p className="font-semibold text-brand-primary">{t("services")}</p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="#" className="footer-link">
                 {t("technicalSupport")}
@@ -94,9 +93,7 @@ export default function Footer() {
 
           {/* Resources */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">
-              {t("resources")}
-            </p>
+            <p className="font-semibold text-brand-primary">{t("resources")}</p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="/about" className="footer-link">
                 {t("about")}
@@ -121,8 +118,10 @@ export default function Footer() {
               >
                 {t("contactUs")}
                 <MdArrowForward
-                  className={`transition-transform  ${
-                    isRTL ? "rotate-180 group-hover:-translate-x-1 " : "group-hover:translate-x-1"
+                  className={`transition-transform ${
+                    isRTL
+                      ? "rotate-180 group-hover:-translate-x-1"
+                      : "group-hover:translate-x-1"
                   }`}
                 />
               </Link>
@@ -132,26 +131,32 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-brand-dark">
-        <div
-          className="container mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-300"
-          dir={"ltr"}
-        >
-          <p>{t("rights")}</p>
+      <div className="bg-bg-light">
+    <div
+  className="container mx-auto px-4 sm:px-6 py-4
+             flex items-center justify-between
+             text-sm text-bg-primary/80"
+  dir="ltr"
+>
+  {/* Logo */}
+  <div className="flex items-center gap-4">
+    <Logo className="scale-90" />
+  </div>
 
-          <div className="flex items-center gap-6 mt-3 md:mt-0 text-xl">
-            <Link href="https://www.facebook.com/profile.php?id=61585550430439" aria-label="Facebook">
-              <FaFacebook className="hover:text-brand-primary transition" />
-            </Link>
-            <Link href="#" aria-label="Twitter">
-              <FaTwitter className="hover:text-brand-primary transition" />
-            </Link>
-            <Link href="#" aria-label="LinkedIn">
-              <FaLinkedin className="hover:text-brand-primary transition" />
-            </Link>
-          </div>
-        </div>
-      </div>
+  {/* Center Text */}
+  <p className="flex-1 text-center">
+    © 2026 AD4TEC. جميع الحقوق محفوظة.
+  </p>
+
+  {/* Social Icons */}
+  <div className="flex items-center gap-6 text-xl">
+    <Link href="#" aria-label="Facebook">
+      <FaFacebook />
+    </Link>
+    
+  </div>
+</div>
+</div>
     </footer>
   );
 }
