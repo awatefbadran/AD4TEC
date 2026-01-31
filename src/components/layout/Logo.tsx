@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface LogoProps {
+  istext?: boolean;
 
   /** Icon sizes */
   iconWidth?: number;
@@ -31,30 +32,40 @@ const Logo = ({
 
   responsive = true,
   className,
+
+  istext = false,
 }: LogoProps) => {
   return (
-    <Link href={'/'}>
-      <div className="flex items-center">
-        {/* Icon – always visible */}
-        <Image
-          src="/ad4tec-icon.png"
-          alt="AD4TEC Icon"
-          width={iconWidth}
-          height={iconHeight}
-          className={iconClassName }
-          priority
-        />
+    <>
+      {istext ? (
+        <span className={` inline-flex text-inherit ${className}`}>
+          AD<span className="text-amber-600">4</span>TEC 
+        </span>
+      ) : (
+        <Link href={"/"}>
+          <div className="flex items-center">
+            {/* Icon – always visible */}
+            <Image
+              src="/ad4tec-icon.png"
+              alt="AD4TEC Icon"
+              width={iconWidth}
+              height={iconHeight}
+              className={iconClassName}
+              priority
+            />
 
-        {/* Full logo */}
-        <Image
-          src="/ad4tec-logo.png"
-          alt="AD4TEC"
-          width={logoWidth}
-          height={logoHeight}
-          className={`${responsive ? "hidden md:block" : "block"} ${logoClassName}`}
-        />
-      </div>
-    </Link>
+            {/* Full logo */}
+            <Image
+              src="/ad4tec-logo.png"
+              alt="AD4TEC"
+              width={logoWidth}
+              height={logoHeight}
+              className={`${responsive ? "hidden md:block" : "block"} ${logoClassName}`}
+            />
+          </div>
+        </Link>
+      )}
+    </>
   );
 };
 

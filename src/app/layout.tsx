@@ -1,3 +1,4 @@
+import React from "react"; // ✅ سطر واحد بس
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   creator: "AD4TEC",
   publisher: "AD4TEC",
 
-  metadataBase: new URL("https://ad4tec.com"), 
+  metadataBase: new URL("https://ad4tec.com"),
 
   openGraph: {
     title: "AD4TEC | Smart Access & Electronic Gate Systems",
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "AD4TEC",
     images: [
       {
-        url: "/og-image.jpg", 
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "AD4TEC Electronic Gate Systems",
@@ -80,9 +81,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
