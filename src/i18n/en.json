@@ -12,7 +12,7 @@
   "company": "Company",
   "resources": "Resources",
   "contactUs": "Contact Us",
-  "rights": "© 2026 AD4TEC. All rights reserved.",
+  "rights": "© 2026 All rights reserved.",
   "technicalSupport": "Technical Support",
   "testing": "Testing",
   "development": "Development",
@@ -23,10 +23,14 @@
   "testimonials": "Testimonials",
   "privacy": "Privacy Policy",
   "terms": "Terms of Use",
-  "heroTitleLine1": "Smart Gate Solutions",
-  "heroTitleLine2": "Designed & Built by AD4TEC",
-  "heroDescription": "AD4TEC is a specialized factory in manufacturing and installing automatic vehicle & pedestrian gates, access control systems, and paid parking solutions — delivering security, durability, and precision for every project.",
-  "requestQuote": "Request a Quote",
+  
+   "hero.title.line1": "Smart Gate Solutions",
+  "hero.title.line2": "Designed & Built by ",
+  "hero.title.highlight": "AD4TEC",
+  "hero.description": "AD4TEC is a specialized factory in manufacturing and installing automatic vehicle & pedestrian gates, access control systems, and paid parking solutions — delivering security, durability, and precision for every project.",
+  "hero.cta": "Request a Quote",
+  "hero.imageAlt": "Automatic Car Gate System by AD4TEC",
+  
   "aboutLabel": "About Us",
   "aboutTitleLine1": " leads the future of",
   "aboutTitleLine2": "electronic gates solutions.",
@@ -109,5 +113,45 @@
   "customersFirst": "Customers First",
   "customersFirstDesc": "Full support & after-sales",
   "workAndFacilities": "Work & Facilities",
-  "facilities": "AD4TEC Facilities"
+  "facilities": "AD4TEC Facilities",
+
+  "process.upperTitle": "OUR PROCESS",
+  "process.title": "How We Execute Projects at AD4TEC",
+  "process.description": "At AD4TEC, we follow a clear and structured workflow for every project, ensuring high quality, safety, and on-time delivery at every stage.",
+
+  "process.step1.title": "Site Study & Requirements",
+  "process.step1.desc": "We start by understanding the client’s needs and conducting an on-site study to analyze technical requirements and security considerations accurately.",
+
+  "process.step2.title": "Design & Planning",
+  "process.step2.desc": "Our engineering team prepares detailed technical designs and execution plans, selecting the most suitable systems and solutions for each project.",
+
+  "process.step3.title": "Manufacturing & Preparation",
+  "process.step3.desc": "All gates and metal structures are manufactured at AD4TEC factory using certified materials and modern technologies to ensure durability and quality.",
+
+  "process.step4.title": "Testing & Inspection",
+  "process.step4.desc": "Every system and gate undergoes thorough testing to ensure operational efficiency, safety, and reliability before installation.",
+
+  "process.step5.title": "Installation & Commissioning",
+  "process.step5.desc": "Our specialized technical team installs the systems on-site, fully operates them, and hands over the project after final verification.",
+
+  "process.step6.title": "Maintenance & Technical Support",
+  "process.step6.desc": "We provide periodic maintenance programs and continuous technical support to ensure long-term performance and reliable after-sales service.",
+
+  "trust.upperTitle": "WHY CHOOSE US",
+  "trust.title": "Companies trust AD4TEC to deliver reliable solutions",
+  "trust.description": "We provide high-quality manufacturing, certified systems, and reliable after-sales support to ensure long-term success for every project.",
+
+  "trust.point1": "Certified by the Ministry of Trade & Industry",
+  "trust.point2": "Real warranty and after-sales service",
+  "trust.point3": "Proven experience across Egypt",
+
+  "trust.quote": "At AD4TEC, we are committed to delivering high-quality electronic gates, access control systems, and parking solutions with full compliance, precision, and on-time delivery.",
+
+  "trust.author": "AD4TEC Management",
+  "trust.position": "Electronic Gates & Parking Systems Factory",
+
+  "cta.upperTitle": "STAY CONNECTED",
+  "cta.title": "Get the latest updates and offers from AD4TEC",
+  "cta.placeholder": "Enter your email or phone",
+  "cta.button": "Contact Us"
 }

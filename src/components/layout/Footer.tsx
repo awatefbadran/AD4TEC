@@ -3,12 +3,7 @@
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 import Logo from "./Logo";
-import {
-  MdArrowForward,
-  MdEmail,
-  MdPhone,
-  MdLocationOn,
-} from "react-icons/md";
+import { MdArrowForward, MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -29,17 +24,17 @@ export default function Footer() {
               <p className="font-semibold">{t("letsTalk")}</p>
 
               <div className="flex items-center gap-2 text-gray-600">
-                <MdPhone className="text-brand-primary" />
-                <p dir="ltr">01027249494 \\ 01000045030</p>
+                <MdPhone className="text-brand-primary " />
+                <p dir="ltr">+20 10 40190064</p>
               </div>
 
               <div className="flex items-center gap-2 text-gray-600">
                 <MdEmail className="text-brand-primary text-xl" />
-                <p>Info@ad4tec.com</p>
+                <p>hi@ad4tec.com</p>
               </div>
 
               <div className="flex items-center gap-2 text-gray-600">
-                <MdLocationOn className="text-brand-primary text-xl" />
+                <MdLocationOn className="text-brand-primary  text-xl" />
                 <p className="text-xs max-w-xs" dir="ltr">
                   {t("address")}
                 </p>
@@ -118,9 +113,9 @@ export default function Footer() {
               >
                 {t("contactUs")}
                 <MdArrowForward
-                  className={`transition-transform ${
+                  className={`transition-transform  ${
                     isRTL
-                      ? "rotate-180 group-hover:-translate-x-1"
+                      ? "rotate-180 group-hover:-translate-x-1 "
                       : "group-hover:translate-x-1"
                   }`}
                 />
@@ -132,31 +127,39 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-bg-light">
-    <div
-  className="container mx-auto px-4 sm:px-6 py-4
-             flex items-center justify-between
-             text-sm text-bg-primary/80"
-  dir="ltr"
->
-  {/* Logo */}
-  <div className="flex items-center gap-4">
-    <Logo className="scale-90" />
-  </div>
+        <div
+          className="container mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-bg-primary/80"
+          dir={"ltr"}
+        >
+          <div className="flex items-center gap-4">
+            <Logo
+              responsive={true}
+              iconWidth={500}
+              iconHeight={500}
+              iconClassName="w-4 h-4"
+              logoWidth={500}
+              logoHeight={500}
+              logoClassName="h-4 md:w-24 ml-2 mx-1"
+            />
+            <p>{t("rights")}</p>
+          </div>
 
-  {/* Center Text */}
-  <p className="flex-1 text-center">
-    © 2026 AD4TEC. جميع الحقوق محفوظة.
-  </p>
-
-  {/* Social Icons */}
-  <div className="flex items-center gap-6 text-xl">
-    <Link href="#" aria-label="Facebook">
-      <FaFacebook />
-    </Link>
-    
-  </div>
-</div>
-</div>
+          <div className="flex items-center gap-6 mt-3 md:mt-0 text-xl text-bg-primary/80">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61585550430439"
+              aria-label="Facebook"
+            >
+              <FaFacebook className="hover:text-brand-primary transition" />
+            </Link>
+            <Link href="#" aria-label="Twitter">
+              <FaTwitter className="hover:text-brand-primary transition" />
+            </Link>
+            <Link href="#" aria-label="LinkedIn">
+              <FaLinkedin className="hover:text-brand-primary transition" />
+            </Link>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }
