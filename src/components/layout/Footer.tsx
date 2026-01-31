@@ -17,26 +17,28 @@ export default function Footer() {
           {/* Left Section */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-              {t("tagline")}
+              {t("general.tagline")}
             </h2>
 
             <div className="space-y-3 text-sm">
-              <p className="font-semibold">{t("letsTalk")}</p>
+              <p className="font-semibold">
+                {t("general.letsTalk")}
+              </p>
 
               <div className="flex items-center gap-2 text-gray-600">
-                <MdPhone className="text-brand-primary " />
+                <MdPhone className="text-brand-primary" />
                 <p dir="ltr">+20 10 40190064</p>
               </div>
 
               <div className="flex items-center gap-2 text-gray-600">
                 <MdEmail className="text-brand-primary text-xl" />
-                <p>hi@ad4tec.com</p>
+                <p>Info@ad4tec.com</p>
               </div>
 
               <div className="flex items-center gap-2 text-gray-600">
-                <MdLocationOn className="text-brand-primary  text-xl" />
+                <MdLocationOn className="text-brand-primary text-xl" />
                 <p className="text-xs max-w-xs" dir="ltr">
-                  {t("address")}
+                  {t("contact.address")}
                 </p>
               </div>
             </div>
@@ -44,78 +46,74 @@ export default function Footer() {
 
           {/* Company */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">{t("company")}</p>
+            <p className="font-semibold text-brand-primary">
+              {t("nav.company")}
+            </p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="/" className="footer-link">
-                {t("home")}
+                {t("nav.home")}
               </Link>
               <Link href="/services" className="footer-link">
-                {t("services")}
+                {t("nav.services")}
               </Link>
               <Link href="/about" className="footer-link">
-                {t("about")}
+                {t("nav.about")}
               </Link>
-              <Link href="/career" className="footer-link">
-                {t("career")}
+              <Link href="/blog" className="footer-link">
+                {t("nav.blog")}
               </Link>
-              <Link href="/news" className="footer-link">
-                {t("news")}
+              <Link href="/contact" className="footer-link">
+                {t("nav.contact")}
               </Link>
             </div>
           </div>
 
           {/* Services */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">{t("services")}</p>
+            <p className="font-semibold text-brand-primary">
+              {t("services.label")}
+            </p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="#" className="footer-link">
-                {t("technicalSupport")}
+                {t("services.items.vehicle.title")}
               </Link>
               <Link href="#" className="footer-link">
-                {t("testing")}
+                {t("services.items.pedestrian.title")}
               </Link>
               <Link href="#" className="footer-link">
-                {t("development")}
-              </Link>
-              <Link href="#" className="footer-link">
-                {t("awsAzure")}
-              </Link>
-              <Link href="#" className="footer-link">
-                {t("consulting")}
+                {t("services.items.parking.title")}
               </Link>
             </div>
           </div>
 
           {/* Resources */}
           <div className="space-y-4">
-            <p className="font-semibold text-brand-primary">{t("resources")}</p>
+            <p className="font-semibold text-brand-primary">
+              {t("nav.resources")}
+            </p>
             <div className="flex flex-col space-y-2 text-sm">
               <Link href="/about" className="footer-link">
-                {t("about")}
-              </Link>
-              <Link href="#" className="footer-link">
-                {t("testimonials")}
-              </Link>
-              <Link href="#" className="footer-link">
-                {t("privacy")}
-              </Link>
-              <Link href="#" className="footer-link">
-                {t("terms")}
+                {t("nav.about")}
               </Link>
               <Link href="/blog" className="footer-link">
-                {t("blog")}
+                {t("nav.blog")}
+              </Link>
+              <Link href="#" className="footer-link">
+                {t("nav.privacy")}
+              </Link>
+              <Link href="#" className="footer-link">
+                {t("nav.terms")}
               </Link>
 
-              {/* Contact CTA */}
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 mt-4 text-brand-primary font-medium group"
               >
-                {t("contactUs")}
+                {t("nav.contact")}
                 <MdArrowForward
-                  className={`transition-transform  ${
+                  className={`transition-transform ${
                     isRTL
-                      ? "rotate-180 group-hover:-translate-x-1 "
+                      ? "rotate-180 group-hover:-translate-x-1"
                       : "group-hover:translate-x-1"
                   }`}
                 />
@@ -129,11 +127,11 @@ export default function Footer() {
       <div className="bg-bg-light">
         <div
           className="container mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-bg-primary/80"
-          dir={"ltr"}
+          dir="ltr"
         >
           <div className="flex items-center gap-4">
             <Logo
-              responsive={true}
+              responsive
               iconWidth={500}
               iconHeight={500}
               iconClassName="w-4 h-4"
@@ -141,20 +139,17 @@ export default function Footer() {
               logoHeight={500}
               logoClassName="h-4 md:w-24 ml-2 mx-1"
             />
-            <p>{t("rights")}</p>
+            <p>{t("general.rights")}</p>
           </div>
 
-          <div className="flex items-center gap-6 mt-3 md:mt-0 text-xl text-bg-primary/80">
-            <Link
-              href="https://www.facebook.com/profile.php?id=61585550430439"
-              aria-label="Facebook"
-            >
+          <div className="flex items-center gap-6 mt-3 md:mt-0 text-xl">
+            <Link href="https://www.facebook.com/profile.php?id=61585550430439">
               <FaFacebook className="hover:text-brand-primary transition" />
             </Link>
-            <Link href="#" aria-label="Twitter">
+            <Link href="#">
               <FaTwitter className="hover:text-brand-primary transition" />
             </Link>
-            <Link href="#" aria-label="LinkedIn">
+            <Link href="#">
               <FaLinkedin className="hover:text-brand-primary transition" />
             </Link>
           </div>

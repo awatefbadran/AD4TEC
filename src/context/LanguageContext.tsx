@@ -10,14 +10,25 @@ const translations = { en, ar };
 
 interface LanguageContextType {
   lang: Lang;
-  t: (key: keyof typeof en) => string;
+  t: (key: string) => any;
   toggleLang: () => void;
   isRTL: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
+// helper to read nested keys like "nav.home"
+function getNestedValue(obj: any, path: string) {
+  return path
+    .split(".")
+    .reduce((acc, key) => acc?.[key], obj) ?? path;
+}
+
+export function LanguageProvider({
+  children
+}: {
+  children: React.ReactNode;
+}) {
   const [lang, setLang] = useState<Lang>("en");
 
   useEffect(() => {
@@ -34,11 +45,17 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     setLang((prev) => (prev === "en" ? "ar" : "en"));
   };
 
-  const t = (key: keyof typeof en) => translations[lang][key];
+  const t = (key: string) =>
+    getNestedValue(translations[lang], key);
 
   return (
     <LanguageContext.Provider
-      value={{ lang, toggleLang, t, isRTL: lang === "ar" }}
+      value={{
+        lang,
+        toggleLang,
+        t,
+        isRTL: lang === "ar"
+      }}
     >
       {children}
     </LanguageContext.Provider>
@@ -47,6 +64,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
 export const useLanguage = () => {
   const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error("useLanguage must be used inside LanguageProvider");
+  if (!ctx) {
+    throw new Error("useLanguage must be used inside LanguageProvider");
+  }
   return ctx;
 };

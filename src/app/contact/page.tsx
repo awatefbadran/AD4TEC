@@ -3,40 +3,44 @@
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Page() {
-  const { t, isRTL } = useLanguage(); 
+  const { t, isRTL } = useLanguage();
 
   const contactItems = [
     {
-      title: t("email"),
+      title: t("contact.email"),
       value: "Info@ad4tec.com",
     },
     {
-      title: t("phone"),
-      value: "01027249494/ 01000045030",
+      title: t("contact.phone"),
+      value: "01027249494 / 01000045030",
     },
     {
-      title: t("whatsapp"),
-      value: t("chatOnWhatsapp"),
+      title: t("contact.whatsapp"),
+      value: t("contact.chatWhatsapp"),
       link: "https://wa.me/201040190064",
     },
     {
-      title: t("address"),
-      value: t("addressValue"), // مثال: "El Robiki – 10th of Ramadan – Alhamd Complex"
+      title: t("contact.address"),
+      value: t("contact.address"),
     },
   ];
 
   return (
     <>
       {/* Hero */}
-      <section className="w-full py-24 bg-gray-900" dir={isRTL ? "rtl" : "ltr"}>
+      <section
+        className="w-full py-24 bg-bg-primary"
+        dir={isRTL ? "rtl" : "ltr"}
+      >
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {t("contact")} AD
-            <span style={{ color: "var(--color-brand-primary)" }}>4</span>
+            {t("contact.title")} AD
+            <span className="text-brand-primary">4</span>
             TEC
           </h1>
+
           <p className="text-gray-300 max-w-2xl mx-auto">
-            {t("contactDescription")}
+            {t("contact.description")}
           </p>
         </div>
       </section>
@@ -49,13 +53,15 @@ export default function Page() {
               key={i}
               className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition"
             >
-              <h4 className="font-semibold text-lg mb-2 text-brand">
+              <h4 className="font-semibold text-lg mb-2 text-brand-primary">
                 {item.title}
               </h4>
+
               {item.link ? (
                 <a
                   href={item.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-700 hover:underline"
                   dir="ltr"
                 >
@@ -73,9 +79,12 @@ export default function Page() {
       <section className="py-20 bg-[#f9fafb]" dir={isRTL ? "rtl" : "ltr"}>
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">
-            {t("workingHours")} <span className="text-brand">{t("hours")}</span>
+            {t("contact.workingHours")}
           </h2>
-          <p className="text-gray-700">{t("workingHoursValue")}</p>
+
+          <p className="text-gray-700">
+            {t("contact.workingHours")}
+          </p>
         </div>
       </section>
 
@@ -83,14 +92,15 @@ export default function Page() {
       <section className="py-20 bg-[#f9fafb]" dir={isRTL ? "rtl" : "ltr"}>
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">
-            {t("loc")} <span className="text-brand">{t("location")}</span>
+            {t("contact.location")}
           </h2>
 
-          <div className="w-full h-[400px] rounded-xl overflow-hidden shadow-md">
+          <div className="w-full h-100 rounded-xl overflow-hidden shadow-md">
             <iframe
               src="https://www.google.com/maps?q=6PJQ%2B389,+10th+of+Ramadan+City+1,+Al-Sharqia+Governorate+7067125&output=embed"
               className="w-full h-full border-0"
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
         </div>

@@ -6,6 +6,8 @@ import { HiCheckBadge } from "react-icons/hi2";
 export default function TrustSection() {
   const { t, isRTL } = useLanguage();
 
+  const points = t("trust.points");
+
   const TextContent = () => (
     <div
       className={`w-full lg:w-1/2 ${isRTL ? "text-right" : "text-left"}`}
@@ -28,14 +30,12 @@ export default function TrustSection() {
       </p>
 
       <div className="flex flex-col gap-3">
-        {[t("trust.point1"), t("trust.point2"), t("trust.point3")].map(
-          (item, i) => (
-            <div key={i} className="flex items-center gap-2">
-              <HiCheckBadge className="text-brand-primary text-xl shrink-0" />
-              <span className="text-sm text-bg-primary">{item}</span>
-            </div>
-          ),
-        )}
+        {points.map((item: string, i: number) => (
+          <div key={i} className="flex items-center gap-2">
+            <HiCheckBadge className="text-brand-primary text-xl shrink-0" />
+            <span className="text-sm text-bg-primary">{item}</span>
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -46,7 +46,9 @@ export default function TrustSection() {
       dir={isRTL ? "rtl" : "ltr"}
     >
       <span
-        className={`absolute top-4 text-5xl text-bg-primary/10 ${isRTL ? "left-6" : "right-6"}`}
+        className={`absolute top-4 text-5xl text-bg-primary/10 ${
+          isRTL ? "left-6" : "right-6"
+        }`}
       >
         {isRTL ? "”" : "“"}
       </span>
@@ -72,10 +74,17 @@ export default function TrustSection() {
     <section className="py-20 bg-[#F9FAFB]">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 items-center rtl:lg:flex-row-reverse">
-          <>
-            <QuoteBox />
-            <TextContent />
-          </>
+          {isRTL ? (
+            <>
+              <QuoteBox />
+              <TextContent />{" "}
+            </>
+          ) : (
+            <>
+              <TextContent />
+              <QuoteBox />
+            </>
+          )}
         </div>
       </div>
     </section>

@@ -1,157 +1,195 @@
 {
-  "home": "Home",
-  "services": "Services",
-  "about": "About Us",
-  "store": "Store",
-  "blog": "Blog",
-  "contact": "Contact Us",
-  "getStarted": "Get Started",
-  "tagline": "Let's make something special",
-  "letsTalk": "Let's talk 🤙",
-  "address": "AD4TEC, Cairo, Egypt",
-  "company": "Company",
-  "resources": "Resources",
-  "contactUs": "Contact Us",
-  "rights": "© 2026 All rights reserved.",
-  "technicalSupport": "Technical Support",
-  "testing": "Testing",
-  "development": "Development",
-  "awsAzure": "AWS / Azure",
-  "consulting": "Consulting",
-  "career": "Career",
-  "news": "News",
-  "testimonials": "Testimonials",
-  "privacy": "Privacy Policy",
-  "terms": "Terms of Use",
-  
-   "hero.title.line1": "Smart Gate Solutions",
-  "hero.title.line2": "Designed & Built by ",
-  "hero.title.highlight": "AD4TEC",
-  "hero.description": "AD4TEC is a specialized factory in manufacturing and installing automatic vehicle & pedestrian gates, access control systems, and paid parking solutions — delivering security, durability, and precision for every project.",
-  "hero.cta": "Request a Quote",
-  "hero.imageAlt": "Automatic Car Gate System by AD4TEC",
-  
-  "aboutLabel": "About Us",
-  "aboutTitleLine1": " leads the future of",
-  "aboutTitleLine2": "electronic gates solutions.",
-  "aboutSubtitle": "Smart Technology. Strong Engineering.",
-  "aboutDescription": "AD4TEC is a specialized factory providing integrated solutions for automatic vehicle & pedestrian gates, access control systems, parking management systems, and metal fabrication. We combine advanced technology, certified materials, and professional execution to deliver secure and reliable systems across Egypt.",
-  "yearsExperience": "Years Experience",
-  "projectsDelivered": "Projects Delivered",
-  "certifiedMaterials": "Certified Materials",
-  "readAboutUs": "Read about us",
-  "expertiseLabel": "Our Expertise",
-  "expertiseTitleLine1": "Engineering reliable gate",
-  "expertiseTitleLine2": "solutions for every project.",
-  "expertiseDescription": "At AD4TEC, we combine engineering expertise, certified materials, and advanced technology to deliver secure and durable electronic gate systems, access control, and parking solutions for industrial and commercial projects across Egypt.",
-  "expertiseCard1Title": "On-Time Delivery",
-  "expertiseCard1Desc": "Committed to strict timelines and professional project execution without delays.",
-  "expertiseCard2Title": "Certified Quality",
-  "expertiseCard2Desc": "Approved products, trusted components, and compliance with industry and consumer protection standards.",
-  "expertiseCard3Title": "Technical Support & Maintenance",
-  "expertiseCard3Desc": "Ongoing maintenance programs and fast technical support to ensure system reliability.",
-  "servicesLabel": "Our Services",
-  "servicesTitle": "We deliver integrated gate & access solutions for modern facilities",
-  "viewAllServices": "View All Services",
-  "serviceVehicleTitle": "Automatic Vehicle Gates",
-  "serviceVehicleDesc": "Manufacturing and installation of durable automatic car gates with advanced control systems for industrial and commercial use.",
-  "servicePedestrianTitle": "Pedestrian Access Gates",
-  "servicePedestrianDesc": "Smart pedestrian gate systems integrated with cards, biometrics, and access control solutions.",
-  "serviceParkingTitle": "Parking Management Systems",
-  "serviceParkingDesc": "Complete paid parking solutions including entry gates, ticketing, monitoring, and reporting systems.",
-  "readMore": "Read more",
-  "aboutPageTitle": "About AD4TEC",
-  "aboutPageIntro": "AD4TEC is a leading factory specializing in electronic gates, access control systems, and smart parking solutions, delivering secure and innovative systems across Egypt.",
-  "whoWeAre": "Who We Are",
-  "whoWeAreDesc": "AD4TEC Factory was established to lead the market in providing electronic gate solutions, access control systems, paid parking management systems, and metal fabrication services including welding and electrostatic painting. We are committed to delivering high-quality products using the latest technologies and certified materials, ensuring on-time delivery, real warranties, and professional after-sales service.",
-  "ourVision": "Our Vision",
-  "ourVisionDesc": "To become the first choice in Egypt and the Middle East for electronic gates and access control solutions by delivering innovative and efficient systems.",
-  "ourMission": "Our Mission",
-  "ourMissionDesc": "Providing integrated solutions that meet the highest standards of quality and security, ensuring an outstanding customer experience for companies, factories, malls, resorts, and residential compounds.",
-  "coreValuesTitle": "Our Core Values",
-  "valueQuality": "Quality",
-  "valueQualityDesc": "Certified materials & high standards",
-  "valueProfessionalism": "Professionalism",
-  "valueProfessionalismDesc": "Skilled & trained teams",
-  "valueCommitment": "Commitment",
-  "valueCommitmentDesc": "On-time delivery & agreements",
-  "valueInnovation": "Innovation",
-  "valueInnovationDesc": "Advanced & smart solutions",
-  "valueCustomers": "Customers First",
-  "valueCustomersDesc": "Full support & after-sales",
-  "contact": "Contact",
-  "contactDescription": "We are always ready to answer your inquiries and provide the best technical consultations and quotations for your projects.",
-  "email": "Email",
-  "phone": "Phone",
-  "whatsapp": "WhatsApp",
-  "chatOnWhatsapp": "Chat on WhatsApp",
-  "address": "Address",
-  "addressValue": "El Robiki – 10th of Ramadan – Alhamd Complex",
-  "workingHours": "Working",
-  "hours": "Hours",
-  "workingHoursValue": "Sunday – Thursday \n 9:00 AM – 5:00 PM",
-  "loc": "location",
-  "location": "Location",
-  "about": "About",
-  "aboutDescription": "AD4TEC is a leading factory specializing in electronic gates, access control systems, and smart parking solutions, delivering secure and innovative systems across Egypt.",
-  "whoWeAre": "Who We Are",
-  "whoWeAreDesc": "AD4TEC Factory was established to lead the market in providing electronic gate solutions, access control systems, paid parking management systems, and metal fabrication services including welding and electrostatic painting. We are committed to delivering high-quality products using the latest technologies and certified materials, ensuring on-time delivery, real warranties, and professional after-sales service.",
-  "ourVision": "Our Vision",
-  "ourVisionDesc": "To become the first choice in Egypt and the Middle East for electronic gates and access control solutions by delivering innovative and efficient systems.",
-  "ourMission": "Our Mission",
-  "ourMissionDesc": "Providing integrated solutions that meet the highest standards of quality and security, ensuring an outstanding customer experience for companies, factories, malls, resorts, and residential compounds.",
-  "our": "Our",
-  "coreValues": "Core Values",
-  "quality": "Quality",
-  "qualityDesc": "Certified materials & high standards",
-  "professionalism": "Professionalism",
-  "professionalismDesc": "Skilled & trained teams",
-  "commitment": "Commitment",
-  "commitmentDesc": "On-time delivery & agreements",
-  "innovation": "Innovation",
-  "innovationDesc": "Advanced & smart solutions",
-  "customersFirst": "Customers First",
-  "customersFirstDesc": "Full support & after-sales",
-  "workAndFacilities": "Work & Facilities",
-  "facilities": "AD4TEC Facilities",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "store": "Store",
+    "blog": "Blog",
+    "contact": "Contact Us",
+    "getStarted": "Get Started",
 
-  "process.upperTitle": "OUR PROCESS",
-  "process.title": "How We Execute Projects at AD4TEC",
-  "process.description": "At AD4TEC, we follow a clear and structured workflow for every project, ensuring high quality, safety, and on-time delivery at every stage.",
+    "company": "Company",
+    "resources": "Resources",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  },
 
-  "process.step1.title": "Site Study & Requirements",
-  "process.step1.desc": "We start by understanding the client’s needs and conducting an on-site study to analyze technical requirements and security considerations accurately.",
+  "general": {
+    "tagline": "Let's make something special",
+    "letsTalk": "Let's talk 🤙",
+    "rights": "© 2026 All rights reserved."
+  },
 
-  "process.step2.title": "Design & Planning",
-  "process.step2.desc": "Our engineering team prepares detailed technical designs and execution plans, selecting the most suitable systems and solutions for each project.",
+  "hero": {
+    "title": {
+      "line1": "Smart Gate Solutions",
+      "line2": "Designed & Built by",
+      "highlight": "AD4TEC"
+    },
+    "description": "AD4TEC is a specialized factory in manufacturing and installing automatic vehicle & pedestrian gates, access control systems, and paid parking solutions — delivering security, durability, and precision for every project.",
+    "cta": "Request a Quote",
+    "imageAlt": "Automatic Car Gate System by AD4TEC"
+  },
 
-  "process.step3.title": "Manufacturing & Preparation",
-  "process.step3.desc": "All gates and metal structures are manufactured at AD4TEC factory using certified materials and modern technologies to ensure durability and quality.",
+  "about": {
+    "label": "About Us",
+    "title": {
+      "line1": "Leads the future of",
+      "line2": "electronic gate solutions"
+    },
+    "subtitle": "Smart Technology. Strong Engineering.",
+    "description": "AD4TEC is a specialized factory providing integrated solutions for automatic vehicle & pedestrian gates, access control systems, parking management systems, and metal fabrication across Egypt.",
+    "stats": {
+      "yearsExperience": "Years Experience",
+      "projectsDelivered": "Projects Delivered",
+      "certifiedMaterials": "Certified Materials"
+    },
+    "readMore": "Read about us",
 
-  "process.step4.title": "Testing & Inspection",
-  "process.step4.desc": "Every system and gate undergoes thorough testing to ensure operational efficiency, safety, and reliability before installation.",
+    "vision": {
+      "title": "Our Vision",
+      "desc": "To become the first choice in Egypt and the Middle East for electronic gates and access control solutions by delivering innovative and efficient systems."
+    },
 
-  "process.step5.title": "Installation & Commissioning",
-  "process.step5.desc": "Our specialized technical team installs the systems on-site, fully operates them, and hands over the project after final verification.",
+    "mission": {
+      "title": "Our Mission",
+      "desc": "Providing integrated solutions that meet the highest standards of quality and security, ensuring an outstanding customer experience for companies, factories, malls, resorts, and residential compounds."
+    },
 
-  "process.step6.title": "Maintenance & Technical Support",
-  "process.step6.desc": "We provide periodic maintenance programs and continuous technical support to ensure long-term performance and reliable after-sales service.",
+    "valuesTitle": "Our Core Values",
 
-  "trust.upperTitle": "WHY CHOOSE US",
-  "trust.title": "Companies trust AD4TEC to deliver reliable solutions",
-  "trust.description": "We provide high-quality manufacturing, certified systems, and reliable after-sales support to ensure long-term success for every project.",
+    "values": [
+      {
+        "title": "Quality",
+        "desc": "Certified materials & high standards"
+      },
+      {
+        "title": "Professionalism",
+        "desc": "Skilled & trained teams"
+      },
+      {
+        "title": "Commitment",
+        "desc": "On-time delivery & agreements"
+      },
+      {
+        "title": "Innovation",
+        "desc": "Advanced & smart solutions"
+      },
+      {
+        "title": "Customers First",
+        "desc": "Full support & after-sales"
+      }
+    ],
 
-  "trust.point1": "Certified by the Ministry of Trade & Industry",
-  "trust.point2": "Real warranty and after-sales service",
-  "trust.point3": "Proven experience across Egypt",
+    "facilitiesTitle": "Work & Facilities",
+    "facilitiesLabel": "AD4TEC Facilities"
+  },
+  "expertise": {
+    "label": "Our Expertise",
+    "title": {
+      "line1": "Engineering reliable gate",
+      "line2": "solutions for every project"
+    },
+    "description": "At AD4TEC, we combine engineering expertise, certified materials, and advanced technology to deliver secure and durable gate, access control, and parking solutions.",
+    "cards": [
+      {
+        "title": "On-Time Delivery",
+        "desc": "Committed to strict timelines and professional project execution without delays."
+      },
+      {
+        "title": "Certified Quality",
+        "desc": "Approved products, trusted components, and compliance with industry standards."
+      },
+      {
+        "title": "Technical Support & Maintenance",
+        "desc": "Ongoing maintenance programs and fast technical support to ensure system reliability."
+      }
+    ]
+  },
 
-  "trust.quote": "At AD4TEC, we are committed to delivering high-quality electronic gates, access control systems, and parking solutions with full compliance, precision, and on-time delivery.",
+  "services": {
+    "label": "Our Services",
+    "title": "We deliver integrated gate & access solutions for modern facilities",
+    "viewAll": "View All Services",
+    "items": {
+      "vehicle": {
+        "title": "Automatic Vehicle Gates",
+        "desc": "Manufacturing and installation of durable automatic car gates with advanced control systems."
+      },
+      "pedestrian": {
+        "title": "Pedestrian Access Gates",
+        "desc": "Smart pedestrian gate systems integrated with cards, biometrics, and access control."
+      },
+      "parking": {
+        "title": "Parking Management Systems",
+        "desc": "Complete paid parking solutions including entry gates, ticketing, monitoring, and reporting."
+      }
+    },
+    "readMore": "Read more"
+  },
 
-  "trust.author": "AD4TEC Management",
-  "trust.position": "Electronic Gates & Parking Systems Factory",
+  "process": {
+    "upperTitle": "OUR PROCESS",
+    "title": "How We Execute Projects at AD4TEC",
+    "description": "We follow a structured workflow ensuring quality, safety, and on-time delivery.",
+    "steps": [
+      {
+        "title": "Site Study & Requirements",
+        "desc": "Understanding client needs and conducting on-site technical assessments."
+      },
+      {
+        "title": "Design & Planning",
+        "desc": "Preparing detailed technical designs and execution plans."
+      },
+      {
+        "title": "Manufacturing & Preparation",
+        "desc": "Manufacturing gates and metal structures using certified materials."
+      },
+      {
+        "title": "Testing & Inspection",
+        "desc": "Thorough testing to ensure efficiency, safety, and reliability."
+      },
+      {
+        "title": "Installation & Commissioning",
+        "desc": "Professional installation, operation, and final handover."
+      },
+      {
+        "title": "Maintenance & Technical Support",
+        "desc": "Continuous support and periodic maintenance programs."
+      }
+    ]
+  },
 
-  "cta.upperTitle": "STAY CONNECTED",
-  "cta.title": "Get the latest updates and offers from AD4TEC",
-  "cta.placeholder": "Enter your email or phone",
-  "cta.button": "Contact Us"
+  "trust": {
+    "upperTitle": "WHY CHOOSE US",
+    "title": "Companies trust AD4TEC to deliver reliable solutions",
+    "description": "High-quality manufacturing, certified systems, and reliable after-sales support.",
+    "points": [
+      "Certified by the Ministry of Trade & Industry",
+      "Real warranty and after-sales service",
+      "Proven experience across Egypt"
+    ],
+    "quote": "At AD4TEC, we are committed to delivering high-quality electronic gates and parking solutions with precision and compliance.",
+    "author": "AD4TEC Management",
+    "position": "Electronic Gates & Parking Systems Factory"
+  },
+
+  "contact": {
+    "title": "Contact Us",
+    "description": "We are always ready to answer your inquiries and provide technical consultations.",
+    "email": "Email",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "chatWhatsapp": "Chat on WhatsApp",
+    "address": "El Robiki – 10th of Ramadan – Alhamd Complex",
+    "workingHours": "Sunday – Thursday | 9:00 AM – 5:00 PM",
+    "location": "Location"
+  },
+
+  "cta": {
+    "upperTitle": "STAY CONNECTED",
+    "title": "Get the latest updates and offers from ",
+    "placeholder": "Enter your email or phone",
+    "button": "Contact Us"
+  }
 }

@@ -38,7 +38,7 @@ const Logo = ({
   return (
     <>
       {istext ? (
-        <span className={` inline-flex text-inherit ${className}`}>
+        <span className={` inline-flex text-inherit ${className}`} dir="ltr">
           AD<span className="text-amber-600">4</span>TEC 
         </span>
       ) : (
