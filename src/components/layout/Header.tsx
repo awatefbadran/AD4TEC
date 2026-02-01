@@ -8,7 +8,7 @@ import Logo from "./Logo";
 
 interface NavItem {
   id: string;
-  labelKey: "home" | "services" | "about" | "store" | "blog" | "contact";
+  labelKey: "home" | "services" | "about" | "store" | "blog" | "contact" | "projects";
   href: string;
 }
 
@@ -22,7 +22,9 @@ export default function Header() {
     { id: "about", labelKey: "about", href: "/about" },
     { id: "store", labelKey: "store", href: "/store" },
     { id: "blog", labelKey: "blog", href: "/blog" },
-    { id: "contact", labelKey: "contact", href: "/contact" }
+    { id: "contact", labelKey: "contact", href: "/contact" },
+    { id: "projects", labelKey: "projects", href: "/projects" },
+
   ];
 
   return (
