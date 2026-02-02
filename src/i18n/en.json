@@ -7,7 +7,7 @@
     "blog": "Blog",
     "contact": "Contact Us",
     "getStarted": "Get Started",
-
+  "projects": "our previos work",
     "company": "Company",
     "resources": "Resources",
     "privacy": "Privacy Policy",
@@ -179,9 +179,14 @@
     "description": "We are always ready to answer your inquiries and provide technical consultations.",
     "email": "Email",
     "phone": "Phone",
+    "addresstitle":"Address",
     "whatsapp": "WhatsApp",
     "chatWhatsapp": "Chat on WhatsApp",
     "address": "El Robiki – 10th of Ramadan – Alhamd Complex",
+    "workingHoursTitle": {
+  "working": "Working",
+  "hours": "Hours"
+},
     "workingHours": "Sunday – Thursday | 9:00 AM – 5:00 PM",
     "location": "Location"
   },
@@ -191,5 +196,69 @@
     "title": "Get the latest updates and offers from ",
     "placeholder": "Enter your email or phone",
     "button": "Contact Us"
+  },
+  "projects": {
+  "label": "Our Projects",
+  "title": "our previos work",
+  "subtitle": "A selection of projects we are proud to deliver with major entities across Egypt.",
+  "executedTitle": "Executed Projects",
+  "categories": {
+    "gates": {
+      "title": "Gates & Access Control Systems",
+      "desc": [
+        "Automatic gates for ports and warehouses",
+        "Access control systems for factories and corporations",
+        "Automatic barrier gates for critical facilities"
+      ],
+      "places": [
+        "Adabiya Port",
+        "Safaga Seaport",
+        "Factories and warehouses nationwide"
+      ]
+    },
+
+    "parking": {
+      "title": "Parking & Garage Systems",
+      "desc": [
+        "Smart parking systems for malls and residential compounds",
+        "Parking solutions for indoor and outdoor commercial centers",
+        "Parking systems for hospitals and hotels"
+      ],
+      "places": [
+        "Mall of Arabia",
+        "Mall of Egypt",
+        "Madinaty Open Air Mall",
+        "Americana Plaza",
+        "Concorde Plaza"
+      ]
+    },
+
+    "hotels": {
+      "title": "Hotels & Touristic Destinations",
+      "desc": [
+        "Security and surveillance systems",
+        "Parking, fire alarm, and audio systems"
+      ],
+      "places": [
+        "Al Masa Hotel",
+        "Sharm El Sheikh Hotels",
+        "Ain Sokhna Resorts"
+      ]
+    },
+
+    "corporates": {
+      "title": "Major Corporations & Groups",
+      "desc": [
+        "Security, access, and exit control systems",
+        "Fully integrated solutions for large-scale projects"
+      ],
+      "places": [
+        "Sami Saad Group (IDG)",
+        "Talaat Mostafa Group (TMG)",
+        "Misr Italia Properties"
+      ]
+    }
   }
+}
+
 }

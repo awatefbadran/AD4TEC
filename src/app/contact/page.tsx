@@ -20,7 +20,7 @@ export default function Page() {
       link: "https://wa.me/201040190064",
     },
     {
-      title: t("contact.address"),
+      title: t("contact.addresstitle"),
       value: t("contact.address"),
     },
   ];
@@ -79,8 +79,12 @@ export default function Page() {
       <section className="py-20 bg-[#f9fafb]" dir={isRTL ? "rtl" : "ltr"}>
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">
-            {t("contact.workingHours")}
+            {t("contact.workingHoursTitle.working")}{" "}
+            <span className="text-amber-600">
+              {t("contact.workingHoursTitle.hours")}
+            </span>
           </h2>
+
 
           <p className="text-gray-700">
             {t("contact.workingHours")}
